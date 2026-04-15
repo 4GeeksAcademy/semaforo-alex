@@ -1,18 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-//Bootstrap
+// Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap"
 
-// index.css'
+// styles
 import '../styles/index.css'
 
-// components
+// componente principal
 import Home from './components/Home';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const root = ReactDOM.createRoot(document.querySelector('#root'));
+
+root.render(
   <React.StrictMode>
-    <Home/>
-  </React.StrictMode>,
-)
+    <Home />
+  </React.StrictMode>
+);
